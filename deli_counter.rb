@@ -16,7 +16,12 @@ def take_a_number(array, name)
 end
 
 def now_serving(deli)
-  line = "Currently serving #{deli}."
-  line.shift
-  puts line
+  if deli == []
+    puts "There is nobody waiting to be served!"
+  else
+    new_line = "Now serving"
+    deli.each_with_index(1) do |name, i|
+      new_line << "#{i} #{name}."
+    end
+  end
 end
