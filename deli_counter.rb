@@ -23,5 +23,6 @@ def now_serving(deli)
       puts "Now serving #{name}."
       deli.shift
     end
+    return deli
   end
 end
