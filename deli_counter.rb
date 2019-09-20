@@ -10,8 +10,9 @@ def line(deli)
   end
 end
 
-def take_a_number(line(deli), person)
+def take_a_number(deli, person)
+  puts line(deli)
   take_a_number.each_with_index(1) do |person, i|
-    line(deli) << "#{i}. #{person}"
+    puts "Welcome, #{person}. You are number #{i} in line."
   end
 end
