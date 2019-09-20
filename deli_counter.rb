@@ -11,13 +11,6 @@ def line(deli)
 end
 
 def take_a_number(deli, person)
-  if deli.empty?
-    puts deli << person
-  elsif deli == deli - 1
-    puts "Currently serving #{person[0]}."
-  else
-    take_a_number.each_with_index(1) do |person, i|
-    puts "Welcome, #{person}. You are number #{i} in line."
-    end
-  end
+  new_line = "Welcome, #{person}. You are number #{index + 1} in line."
+  puts new_line
 end
