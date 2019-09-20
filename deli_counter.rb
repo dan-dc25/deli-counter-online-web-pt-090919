@@ -11,6 +11,11 @@ def line(deli)
 end
 
 def take_a_number(array, name)
-  new_line = "Welcome, #{name}. You are number #{array(1)} in line."
+  new_line = "Welcome, #{name}. You are number #{array.length} in line."
   puts new_line
+end
+
+def take_a_number(deli, name)
+  deli << name
+  puts "Welcome, #{name}. You are number #{deli.length} in line."
 end
