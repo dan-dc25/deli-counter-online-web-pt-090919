@@ -24,6 +24,6 @@ def now_serving(deli)
       new_line << "#{i} #{name}."
       new_line.shift
     end
-    return new_line
   end
+  return new_line
 end
