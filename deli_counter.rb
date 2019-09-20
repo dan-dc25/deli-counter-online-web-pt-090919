@@ -19,11 +19,9 @@ def now_serving(deli)
   if deli == []
     puts "There is nobody waiting to be served!"
   else
-    new_line = "Now serving"
-    deli.each_with_index(1) do |name, i|
-      new_line << "#{i} #{name}."
-      new_line.shift
-      puts new_line
+    deli.each do |name|
+      puts "Now serving #{name}."
+      deli.shift
     end
   end
 end
