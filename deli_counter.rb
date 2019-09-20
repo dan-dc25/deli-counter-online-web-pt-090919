@@ -11,6 +11,6 @@ def line(deli)
 end
 
 def take_a_number(array, name)
-  new_line = "Welcome, #{name}. You are number #{array[0]} in line."
+  new_line = "Welcome, #{name}. You are number #{array.with_index(1)} in line."
   puts new_line
 end
