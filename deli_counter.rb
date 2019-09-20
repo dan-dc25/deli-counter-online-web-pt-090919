@@ -23,7 +23,7 @@ def now_serving(deli)
     deli.each_with_index(1) do |name, i|
       new_line << "#{i} #{name}."
       new_line.shift
+      puts new_line
     end
   end
-  return new_line
 end
