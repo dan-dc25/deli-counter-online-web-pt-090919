@@ -20,7 +20,7 @@ def now_serving(deli)
     puts "There is nobody waiting to be served!"
   else
     deli.each do |name|
-      puts "Currently serving #{deli.first}."
+      puts "Currently serving #{name.first}."
       deli.shift
     end
   end
