@@ -11,7 +11,8 @@ def line(deli)
 end
 
 def take_a_number(deli, person)
-  puts line(1)
+  if deli.empty?
+    puts deli << person
   take_a_number.each_with_index(1) do |person, i|
     puts "Welcome, #{person}. You are number #{i} in line."
   end
