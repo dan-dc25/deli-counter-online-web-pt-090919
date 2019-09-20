@@ -10,7 +10,7 @@ def line(deli)
   end
 end
 
-def take_a_number(deli, person)
-  new_line = "Welcome, #{person}. You are number #{index + 1} in line."
+def take_a_number(array, name)
+  new_line = "Welcome, #{name}. You are number #{array[0]} in line."
   puts new_line
 end
