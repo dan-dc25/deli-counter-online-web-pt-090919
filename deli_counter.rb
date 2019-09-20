@@ -14,3 +14,9 @@ def take_a_number(array, name)
   array << name
   puts "Welcome, #{name}. You are number #{array.length} in line."
 end
+
+def now_serving(deli)
+  line = "Currently serving #{deli}."
+  line.shift
+  puts line
+end
