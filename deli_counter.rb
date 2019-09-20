@@ -16,7 +16,7 @@ def take_a_number(array, name)
 end
 
 def now_serving(deli)
-  if deli.empty?
+  if deli == []
     puts "There is nobody waiting to be served!"
   else
       puts "Currently serving #{deli.first}."
